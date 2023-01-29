@@ -14,7 +14,8 @@ close $ntrace
 close $namfile
 
 exec nam prog1.nam &
-exec echo "The number of packet drops is " & exec grep -c "^d" prog1.tr &
+exec echo "The number of packet drops is " & 
+exec grep -c "^d" prog1.tr &
 exit 0
 }
 
