@@ -47,7 +47,8 @@ $ns duplex-link-op $n(2) $n(3) queuePos 0.5
 
 set tcp0 [new Agent/TCP]
 $tcp0 set class_ 2
-$ns attach-agent $n(2) $tcp0 set sink0 [new Agent/TCPSink]
+$ns attach-agent $n(2) $tcp0 
+set sink0 [new Agent/TCPSink]
 $ns attach-agent $n(4) $sink0
 $ns connect $tcp0 $sink0
 
