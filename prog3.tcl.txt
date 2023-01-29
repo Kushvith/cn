@@ -13,7 +13,8 @@ set winFile0 [open WinFile0 w]
 set winFile1 [open WinFile1 w]
 
 proc Finish {} {
-#Dump all trace data and Close the files global ns ntrace namfile
+#Dump all trace data and Close the files 
+global ns ntrace namfile
 $ns flush-trace 
 close $ntrace 
 close $namfile
