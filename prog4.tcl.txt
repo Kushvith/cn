@@ -101,7 +101,7 @@ $ns run
 
 #program can run without awk file
 #to run awk file use this command
-# gawk -f filename.awk prog4.tr
+# awk -f filename.awk prog4.tr
 #===================================
 #CODE TO BE SAVED AS .awk FILE
 #===================================
